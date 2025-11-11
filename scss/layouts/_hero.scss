@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+
+.hero-section {
+  .slider {
+    position: relative;
+    background-image: url("../images/mobile-image-hero-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 100%;
+
+    .slider-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 112px;
+        height: 56px;
+        display: flex;
+
+        .next-btn, .prev-btn {
+            background-color: $black;
+            width: 100%;
+        }
+    }
+  }
+  
+  .description {
+    margin-block: 64px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

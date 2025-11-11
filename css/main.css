@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  color: #A0A0A0;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "League Spartan", sans-serif;
+  color: #000000;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 7px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  color: #000000;
+}
+
+button {
+  font-family: "League Spartan", sans-serif;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hero-section .slider {
+  position: relative;
+  background-image: url("../images/mobile-image-hero-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+}
+.hero-section .slider .slider-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 112px;
+  height: 56px;
+  display: flex;
+}
+.hero-section .slider .slider-btn .next-btn, .hero-section .slider .slider-btn .prev-btn {
+  background-color: #000000;
+  width: 100%;
+}
+.hero-section .description {
+  margin-block: 64px;
+  padding-inline: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header {
+  position: absolute;
+  z-index: 10;
+  padding: 48px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 195px;
+}/*# sourceMappingURL=main.css.map */

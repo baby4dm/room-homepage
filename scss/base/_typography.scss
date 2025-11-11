@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+body {
+  font-family: $font-family-primary;
+  color: $grey-500;
+  background-color: $white;
+
+  font-size: $font-size-preset-3;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-preset-3-medium;
+  letter-spacing: $letter-spacing-preset-3-medium;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-primary;
+  color: $black;
+  margin: 0;
+}
+
+h1 {
+  font-size: $font-size-preset-2;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-preset-2;
+  letter-spacing: $letter-spacing-preset-2;
+}
+
+h2 {
+  font-size: $font-size-preset-3;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-preset-3-bold;
+  letter-spacing: $letter-spacing-preset-3-bold;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font-family-primary;
+  color: $black;
+}
+
+button {
+  font-family: $font-family-primary;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}

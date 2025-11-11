@@ -1,0 +1,10 @@
+@use "../base/variables";
+
+header {
+    position: absolute;
+    z-index: 10;
+    padding: 48px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 195px;
+}
