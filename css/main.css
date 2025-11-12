@@ -134,7 +134,8 @@ button {
   height: 56px;
   display: flex;
 }
-.hero-section .slider .slider-btn .next-btn, .hero-section .slider .slider-btn .prev-btn {
+.hero-section .slider .slider-btn .next-btn,
+.hero-section .slider .slider-btn .prev-btn {
   background-color: #000000;
   width: 100%;
 }
@@ -164,6 +165,9 @@ button {
   }
 }
 @media (min-width: 600px) {
+  .hero-section .slider {
+    height: 400px;
+  }
   .hero-section .slider .slider-btn {
     width: 160px;
     height: 80px;
@@ -190,6 +194,7 @@ button {
   }
   .hero-section .slider .slider-btn {
     transform: translateX(160px);
+    max-width: 234px;
   }
   .hero-section .description {
     width: 100%;
@@ -211,6 +216,9 @@ header {
   justify-content: space-between;
   width: calc(50% + 48px);
 }
+header .desktop-nav {
+  display: none;
+}
 
 @media (min-width: 600px) {
   header {
@@ -219,8 +227,28 @@ header {
   }
 }
 @media (min-width: 1044px) {
-  header {
-    margin-inline: auto;
+  header .menu-toggle,
+  header .logo {
+    display: none;
+  }
+  header .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+  header .desktop-nav .logo {
+    display: block;
+  }
+  header .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #ffffff;
+  }
+  header .desktop-nav ul li {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.7px;
   }
 }
 .about-section {

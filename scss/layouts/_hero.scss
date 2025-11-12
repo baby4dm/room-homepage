@@ -12,20 +12,21 @@
     width: 100%;
 
     .slider-btn {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 112px;
-        height: 56px;
-        display: flex;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 112px;
+      height: 56px;
+      display: flex;
 
-        .next-btn, .prev-btn {
-            background-color: $black;
-            width: 100%;
-        }
+      .next-btn,
+      .prev-btn {
+        background-color: $black;
+        width: 100%;
+      }
     }
   }
-  
+
   .description {
     width: 100%;
     margin-block: 64px;
@@ -43,10 +44,9 @@
     align-items: center;
 
     img {
-        width: 54px;
-        height: 12px;
+      width: 54px;
+      height: 12px;
     }
-    
   }
 }
 
@@ -61,6 +61,7 @@
 @include tablet {
   .hero-section {
     .slider {
+      height: 400px;
       .slider-btn {
         width: 160px;
         height: 80px;
@@ -88,6 +89,7 @@
       flex: 840;
       .slider-btn {
         transform: translateX(160px);
+        max-width: 234px;
       }
     }
     .description {

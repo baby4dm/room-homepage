@@ -9,6 +9,10 @@ header {
   gap: 16px;
   justify-content: space-between;
   width: calc(50% + 48px);
+
+  .desktop-nav {
+    display: none;
+  }
 }
 
 @include tablet {
@@ -20,6 +24,28 @@ header {
 
 @include desktop {
   header {
-    margin-inline: auto;
+    .menu-toggle,
+    .logo {
+      display: none;
+    }
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+      .logo {
+        display: block;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        color: $white;
+        li {
+          font-size: $font-size-preset-3;
+          font-weight: $font-weight-semibold;
+          letter-spacing: $letter-spacing-preset-3-semibold;
+        }
+      }
+    }
   }
 }
