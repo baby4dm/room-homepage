@@ -10,6 +10,7 @@
     background-size: cover;
     height: 360px;
     width: 100%;
+    transition: opacity 0.5s ease-in-out;
 
     .slider-btn {
       position: absolute;
@@ -23,6 +24,12 @@
       .prev-btn {
         background-color: $black;
         width: 100%;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        transform-origin: right center;
+        &:hover {
+          transform: scale(1.2);
+          background-color: $grey-500;
+        }
       }
     }
   }
@@ -34,6 +41,11 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    .title,
+    .content {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
   }
 
   .shop-now-btn {
@@ -42,7 +54,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-3px);
+      color: $grey-500;
+    }
 
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
     img {
       width: 54px;
       height: 12px;

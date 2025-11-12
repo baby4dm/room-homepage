@@ -77,6 +77,28 @@ header {
         align-items: center;
         gap: 32px;
         color: $white;
+        li {
+          cursor: pointer;
+          position: relative;
+          padding-bottom: 8px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: $white;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            width: 24px;
+          }
+        }
       }
     }
   }
