@@ -98,6 +98,9 @@ a {
 
 button {
   font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  letter-spacing: 12.5px;
+  font-weight: 500;
   cursor: pointer;
   background: none;
   border: none;
@@ -127,10 +130,21 @@ button {
 }
 .hero-section .description {
   margin-block: 64px;
-  padding-inline: 24px;
+  padding-inline: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.hero-section .shop-now-btn {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section .shop-now-btn img {
+  width: 54px;
+  height: 12px;
 }
 
 header {
@@ -140,4 +154,31 @@ header {
   display: flex;
   justify-content: space-between;
   width: 195px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+.about-section .top-img,
+.about-section .bottom-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-section .top-img {
+  height: 238px;
+  background-image: url("../images/image-about-dark.jpg");
+}
+.about-section .text-content {
+  padding-inline: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-section .bottom-img {
+  height: 227px;
+  background-image: url("../images/image-about-light.jpg");
 }/*# sourceMappingURL=main.css.map */

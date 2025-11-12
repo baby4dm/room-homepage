@@ -48,6 +48,9 @@ a {
 
 button {
   font-family: $font-family-primary;
+  font-size: $font-size-preset-4;
+  letter-spacing: $letter-spacing-preset-4;
+  font-weight: $font-weight-medium;
   cursor: pointer;
   background: none;
   border: none;

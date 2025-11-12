@@ -1,0 +1,29 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+
+  .top-img,
+  .bottom-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .top-img {
+    height: 238px;
+    background-image: url("../images/image-about-dark.jpg");
+  }
+
+  .text-content {
+    padding-inline: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .bottom-img {
+    height: 227px;
+    background-image: url("../images/image-about-light.jpg");
+  }
+}

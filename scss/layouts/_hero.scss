@@ -27,9 +27,23 @@
   
   .description {
     margin-block: 64px;
-    padding-inline: 24px;
+    padding-inline: 32px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .shop-now-btn {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 54px;
+        height: 12px;
+    }
+    
   }
 }
