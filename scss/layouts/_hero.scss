@@ -10,7 +10,14 @@
     background-size: cover;
     height: 360px;
     width: 100%;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(1);
+    opacity: 1;
+
+    &.is-fading {
+      opacity: 0;
+      transform: scale(1.03);
+    }
 
     .slider-btn {
       position: absolute;
@@ -55,15 +62,6 @@
     justify-content: space-between;
     align-items: center;
     transition: transform 0.3s ease;
-    &:hover {
-      transform: translateY(-3px);
-      color: $grey-500;
-    }
-
-    &:active {
-      transform: translateY(0);
-      box-shadow: none;
-    }
     img {
       width: 54px;
       height: 12px;
@@ -111,6 +109,16 @@
       .slider-btn {
         transform: translateX(160px);
         max-width: 234px;
+
+        &:hover {
+          transform: translateY(-3px);
+          color: $grey-500;
+        }
+
+        &:active {
+          transform: translateY(0);
+          box-shadow: none;
+        }
       }
     }
     .description {

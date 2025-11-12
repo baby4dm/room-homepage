@@ -1,20 +1,89 @@
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,8 +92,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -32,16 +110,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -131,7 +213,13 @@ li {
   background-size: cover;
   height: 360px;
   width: 100%;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transform: scale(1);
+  opacity: 1;
+}
+.hero-section .slider.is-fading {
+  opacity: 0;
+  transform: scale(1.03);
 }
 .hero-section .slider .slider-btn {
   position: absolute;
@@ -172,14 +260,6 @@ li {
   justify-content: space-between;
   align-items: center;
   transition: transform 0.3s ease;
-}
-.hero-section .shop-now-btn:hover {
-  transform: translateY(-3px);
-  color: #a0a0a0;
-}
-.hero-section .shop-now-btn:active {
-  transform: translateY(0);
-  box-shadow: none;
 }
 .hero-section .shop-now-btn img {
   width: 54px;
@@ -222,6 +302,14 @@ li {
   .hero-section .slider .slider-btn {
     transform: translateX(160px);
     max-width: 234px;
+  }
+  .hero-section .slider .slider-btn:hover {
+    transform: translateY(-3px);
+    color: #a0a0a0;
+  }
+  .hero-section .slider .slider-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
   }
   .hero-section .description {
     width: 100%;
