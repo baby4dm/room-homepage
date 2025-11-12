@@ -57,7 +57,11 @@ button {
   border: none;
   padding: 0;
 }
-
+li {
+  font-size: $font-size-preset-3;
+  font-weight: $font-weight-semibold;
+  letter-spacing: $letter-spacing-preset-3-semibold;
+}
 @include tablet {
   h1 {
     font-size: $font-size-preset-1;

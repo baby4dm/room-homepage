@@ -107,6 +107,12 @@ button {
   padding: 0;
 }
 
+li {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: 48px;
@@ -216,14 +222,51 @@ header {
   justify-content: space-between;
   width: calc(50% + 48px);
 }
+header .mobile-nav {
+  background-color: #ffffff;
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 24px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+header .mobile-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: #000000;
+}
+header .mobile-nav.open {
+  transform: translateX(0);
+}
 header .desktop-nav {
   display: none;
+}
+header .overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 
 @media (min-width: 600px) {
   header {
     padding-inline: 64px;
     width: calc(50% + 128px);
+  }
+  header .mobile-nav {
+    padding-inline: 64px;
   }
 }
 @media (min-width: 1044px) {
@@ -244,11 +287,6 @@ header .desktop-nav {
     align-items: center;
     gap: 32px;
     color: #ffffff;
-  }
-  header .desktop-nav ul li {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.7px;
   }
 }
 .about-section {

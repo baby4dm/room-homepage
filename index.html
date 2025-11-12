@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="./index.js" defer></script>
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
@@ -24,6 +25,17 @@
         <img src="./images/icon-hamburger.svg" alt="" />
       </button>
       <img class="logo" src="./images/logo.svg" alt="Room logo" />
+      <nav class="mobile-nav">
+        <button class="close-btn" aria-label="Close menu">
+          <img src="./images/icon-close.svg" alt="" />
+        </button>
+        <ul>
+          <li>home</li>
+          <li>shop</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </nav>
       <nav class="desktop-nav">
         <img class="logo" src="./images/logo.svg" alt="Room logo" />
         <ul>
@@ -33,6 +45,7 @@
           <li>contact</li>
         </ul>
       </nav>
+      <div class="overlay"></div>
     </header>
 
     <main>
