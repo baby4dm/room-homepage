@@ -1,3 +1,5 @@
+@use "../utils/mixins" as *;
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -25,5 +27,47 @@
   .bottom-img {
     height: 227px;
     background-image: url("../images/image-about-light.jpg");
+  }
+}
+
+@include tablet {
+  .about-section {
+    gap: 64px;
+
+    .top-img {
+      height: 300px;
+    }
+    .text-content {
+      padding-inline: 64px;
+    }
+    .bottom-img {
+      height: 243px;
+    }
+  }
+}
+@include desktop {
+  .about-section {
+    height: 266px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    .top-img,
+    .text-content,
+    .bottom-img {
+      height: 100%;
+      width: 100%;
+    }
+    .top-img {
+      flex: 420px;
+    }
+    .text-content {
+      flex: 580px;
+      justify-content: center;
+      padding-block: 16px;
+      padding-inline: clamp(16px, 4vw, 48px);
+    }
+    .bottom-img {
+      flex: 440px;
+    }
   }
 }

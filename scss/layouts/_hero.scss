@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../utils/mixins" as *;
 
 .hero-section {
   .slider {
@@ -26,6 +27,7 @@
   }
   
   .description {
+    width: 100%;
     margin-block: 64px;
     padding-inline: 32px;
     display: flex;
@@ -45,5 +47,58 @@
         height: 12px;
     }
     
+  }
+}
+
+@include hero-img {
+  .hero-section {
+    .slider {
+      background-image: url("../images/desktop-image-hero-1.jpg");
+    }
+  }
+}
+
+@include tablet {
+  .hero-section {
+    .slider {
+      .slider-btn {
+        width: 160px;
+        height: 80px;
+      }
+    }
+    .description {
+      padding-inline: 64px;
+    }
+    .shop-now-btn {
+      margin-top: 8px;
+      justify-content: start;
+      gap: 24px;
+    }
+  }
+}
+
+@include desktop {
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    height: 534px;
+    .slider {
+      height: 100%;
+      max-width: 840px;
+      flex: 840;
+      .slider-btn {
+        transform: translateX(160px);
+      }
+    }
+    .description {
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-block: 0;
+      padding-inline: clamp(24px, 5vw, 100px);
+      flex: 600;
+    }
   }
 }

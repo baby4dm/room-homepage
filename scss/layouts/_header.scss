@@ -1,10 +1,25 @@
-@use "../base/variables";
+@use "../base/variables" as *;
+@use "../utils/mixins" as *;
 
 header {
-    position: absolute;
-    z-index: 10;
-    padding: 48px 24px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 195px;
+  position: absolute;
+  z-index: 10;
+  padding: 48px 24px 0;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  width: calc(50% + 48px);
+}
+
+@include tablet {
+  header {
+    padding-inline: 64px;
+    width: calc(50% + 128px);
+  }
+}
+
+@include desktop {
+  header {
+    margin-inline: auto;
+  }
 }

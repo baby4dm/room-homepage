@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+
+
+@mixin hero-img {
+  @media (min-width: $breakpoint-hero) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
