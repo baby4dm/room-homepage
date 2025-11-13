@@ -10,6 +10,7 @@ body {
   font-weight: $font-weight-medium;
   line-height: $line-height-preset-3-medium;
   letter-spacing: $letter-spacing-preset-3-medium;
+  min-height: 100vh;
 }
 
 h1,

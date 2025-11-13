@@ -141,6 +141,7 @@ body {
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.5px;
+  min-height: 100vh;
 }
 
 h1,
@@ -261,10 +262,6 @@ li {
   align-items: center;
   transition: transform 0.3s ease;
 }
-.hero-section .shop-now-btn img {
-  width: 54px;
-  height: 12px;
-}
 
 @media (min-width: 500px) {
   .hero-section .slider {
@@ -290,36 +287,38 @@ li {
 }
 @media (min-width: 1044px) {
   .hero-section {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    height: 534px;
+    flex: 534;
   }
   .hero-section .slider {
-    height: 100%;
     max-width: 840px;
     flex: 840;
+    height: auto;
   }
   .hero-section .slider .slider-btn {
     transform: translateX(160px);
     max-width: 234px;
   }
   .hero-section .slider .slider-btn:hover {
-    transform: translateY(-3px);
     color: #a0a0a0;
-  }
-  .hero-section .slider .slider-btn:active {
-    transform: translateY(0);
-    box-shadow: none;
   }
   .hero-section .description {
     width: 100%;
     max-width: 600px;
-    height: 100%;
     align-items: center;
     justify-content: center;
     margin-block: 0;
     padding-inline: clamp(24px, 5vw, 100px);
     flex: 600;
+  }
+  .hero-section .shop-now-btn:hover {
+    color: #a0a0a0;
+    transform: scale(1.1);
+  }
+  .hero-section .shop-now-btn:hover svg path {
+    fill: #a0a0a0;
   }
 }
 header {
@@ -400,7 +399,7 @@ header .overlay {
   header .desktop-nav ul li {
     cursor: pointer;
     position: relative;
-    padding-bottom: 8px;
+    margin: 8px;
   }
   header .desktop-nav ul li::after {
     content: "";
@@ -461,7 +460,7 @@ header .overlay {
 }
 @media (min-width: 1044px) {
   .about-section {
-    height: 266px;
+    flex: 266;
     display: flex;
     flex-direction: row;
     gap: 0;
@@ -469,19 +468,24 @@ header .overlay {
   .about-section .top-img,
   .about-section .text-content,
   .about-section .bottom-img {
-    height: 100%;
     width: 100%;
+    height: auto;
   }
   .about-section .top-img {
-    flex: 420px;
+    flex: 465;
   }
   .about-section .text-content {
-    flex: 580px;
+    flex: 535;
     justify-content: center;
     padding-block: 16px;
     padding-inline: clamp(16px, 4vw, 48px);
   }
   .about-section .bottom-img {
-    flex: 440px;
+    flex: 487;
   }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }/*# sourceMappingURL=main.css.map */

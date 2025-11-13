@@ -80,7 +80,7 @@ header {
         li {
           cursor: pointer;
           position: relative;
-          padding-bottom: 8px;
+          margin: 8px;
 
           &::after {
             content: "";
